@@ -1,0 +1,34 @@
+[
+  {
+    "title": "What is React?",
+    "variants": ["library", "framework", "application"],
+    "correct": 0
+  },
+  {
+    "title": "What is component?",
+    "variants": [
+      "application",
+      "a part of an application or a webpage",
+      "somthing else"
+    ],
+    "correct": 1
+  },
+  {
+    "title": "What is JSX?",
+    "variants": [
+      "simple HTML",
+      "a function",
+      "JavaScript extension that allows us to write HTML in React"
+    ],
+    "correct": 2
+  },
+  {
+    "title": "What is props?",
+    "variants": [
+      "arguments passed into React components",
+      "a function",
+      "another name for component"
+    ],
+    "correct": 0
+  }
+]

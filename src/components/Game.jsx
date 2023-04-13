@@ -1,16 +1,22 @@
-import React from 'react'
+import React from "react";
 
 const Game = ({ step, question, questions, onClickVariant }) => {
   const percentage = Math.round((step / questions.length) * 100);
+
   return (
     <>
-      <div className="progress">
+      <h1 className="heading">Quiz App</h1>
+
+      {/* progress bar */}
+      <div className="progress-bar">
         <div
           style={{ width: `${percentage}%` }}
-          className="progress__inner"
+          className="progress-bar-inner"
         ></div>
       </div>
+
       <h1>{question.title}</h1>
+
       <ul>
         {question.variants.map((text, index) => (
           <li onClick={() => onClickVariant(index)} key={text}>
@@ -22,4 +28,4 @@ const Game = ({ step, question, questions, onClickVariant }) => {
   );
 };
 
-export default Game
+export default Game;

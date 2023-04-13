@@ -11,7 +11,7 @@ const Result = ({ questions, correct }) => {
         You have {correct} out of {questions.length} correct answers.
       </h2>
       <a href="/">
-        <button>Try again</button>
+        <button>Play again</button>
       </a>
     </div>
   );
