@@ -4,7 +4,6 @@ import Result from "./components/Result";
 import Game from "./components/Game";
 import questions from "./Data.json";
 
-
 function App() {
   const [step, setStep] = useState(0);
   const [correct, setCorrect] = useState(0);
