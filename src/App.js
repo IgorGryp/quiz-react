@@ -1,20 +1,22 @@
 import { useState } from "react";
-import "./index.scss";
+import "./index.css";
+/* components */
 import Result from "./components/Result";
 import Game from "./components/Game";
+/* JSON */
 import questions from "./Data.json";
 
 function App() {
   const [step, setStep] = useState(0);
-  const [correct, setCorrect] = useState(0);
+  const [correctAnswer, setCorrectAnswer] = useState(0);
   const question = questions[step];
 
   const onClickVariant = (index) => {
-    console.log(step, index);
     setStep(step + 1);
+
     /* checks if the answer is correct */
-    if (index === question.correct) {
-      setCorrect(correct + 1);
+    if (index === question.correct_answer) {
+      setCorrectAnswer(correctAnswer + 1);
     }
   };
   return (
@@ -27,7 +29,7 @@ function App() {
           questions={questions}
         />
       ) : (
-        <Result correct={correct} questions={questions} />
+        <Result correctAnswer={correctAnswer} questions={questions} />
       )}
     </div>
   );

@@ -2,7 +2,7 @@
   {
     "title": "What is React?",
     "variants": ["library", "framework", "application"],
-    "correct": 0
+    "correct_answer": 0
   },
   {
     "title": "What is component?",
@@ -11,7 +11,7 @@
       "a part of an application or a webpage",
       "somthing else"
     ],
-    "correct": 1
+    "correct_answer": 1
   },
   {
     "title": "What is JSX?",
@@ -20,7 +20,7 @@
       "a function",
       "JavaScript extension that allows us to write HTML in React"
     ],
-    "correct": 2
+    "correct_answer": 2
   },
   {
     "title": "What is props?",
@@ -29,6 +29,6 @@
       "a function",
       "another name for component"
     ],
-    "correct": 0
+    "correct_answer": 0
   }
 ]

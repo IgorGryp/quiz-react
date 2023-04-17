@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Result = ({ questions, correct }) => {
+const Result = ({ questions, correctAnswer }) => {
   return (
     <div className="result">
       <img
@@ -8,7 +8,7 @@ const Result = ({ questions, correct }) => {
         alt=""
       />
       <h2>
-        You have {correct} out of {questions.length} correct answers.
+        You have {correctAnswer} out of {questions.length} correct answers.
       </h2>
       <a href="/">
         <button>Play again</button>
